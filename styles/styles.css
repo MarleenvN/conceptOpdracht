@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:wght@100;300;400;500;700&display=swap');
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -24,19 +24,107 @@
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
-/*  hier komt het algemene lettertype */
+
+        /*  -------       LET OP!!  niet gebruikte fonts weghalen uit @import  --*/
+
+        /*
+            Paars       #5722CD;
+            Blauw       #4845E4;
+            Roze        #ED4385;
+            Zwart       #0C0C0C (voor standaard tekst);
+            Lichtpaars  #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+            Lichtgrijs  #F3F6F9 (voor de achtergrond van de projecten)
+            Grijs       #7A7A7A (voor de service-tegel tekst);
+        */
+
+
 
 /* ------------------------------- 3. Layout --------------------------------------- */
+.inner-container-wide   {
+    border: #BC4749 5px dashed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+    margin: 0 20px;
+}
+
+.inner-container-small {
+    border: #F8E16C 5px dashed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+    margin: 0 20px;
+}
+
+.outer-container    {
+    border: #386641 5px solid;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 
 /* --------------- 3.1 Reusables ----------------------- */
+
+ul  {
+    list-style-type: none;
+}
 
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+header  {
+    background: rgb(72,69,228);
+    background: linear-gradient(90deg, rgba(72,69,228,1) 0%, rgba(87,34,205,1) 91%);
+    color: whitesmoke;
+    flex-direction: column;
+    position: relative;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.header-inner   {
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-button  {
+    background-color: #ED4385;
+}
+
+.squiggle   {
+    position: absolute;
+}
 
 /* --------------- 4.2 Introduction ------------------- */
+
+.introduction   {
+
+}
+
+
+/* --------------- 4.3 Work  -------------------------- */
+
+
+/* --------------- 4.4 Services ----------------------- */
+
+
+/* --------------- 4.5 form  -------------------------- */
+
+
+/* --------------- 4.6 Footer  -------------------------- */
+
+.footer {
+    background-color: #0C0C0C;
+    color: whitesmoke;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
 
